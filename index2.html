@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/captain-america.png">
+    <title>Parallax Effect - Task 1</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <section>
+        <img src="img/webDev.jpg" id="bg">
+        <h2 id="text">Web Development</h2>
+    </section>
+    <div class="row">
+        <div class="hedi">
+            <h1>TYPES OF LISTS</h1>
+            <p>HTML lists allow web developers to group a set of related items in lists. An unordered list starts with the ul tag. Each list item starts with the li tag. An ordered list starts with the ol tag. Each list item starts with the li tag. HTML also supports description lists.
+            A description list is a list of terms, with a description of each term.</p>
+        </div>
+        <div class="column">
+            <h2>Ordered Lists</h2>
+            <ol>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>MongoDB</li>
+                <li>PHP</li>
+            </ol>
+        </div>
+        <div class="column">
+            <h2>Unordered Lists</h2>
+            <ul>
+                <li>BootStrap</li>
+                <li>Node.js</li>
+                <li>Angular</li>
+                <li>React</li>
+                <li>Laravel</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Description Lists</h2>
+            <dl>
+                <dt><u>BootStrap</u></dt>
+                <dd>- Most popular HTML, CSS, and JavaScript framework</dd>
+                <dt><u>Angular</u></dt>
+                <dd>- TypeScript-based open-source web application framework</dd>
+            </dl>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <script>
+
+        gsap.to("#bg", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.5
+        });
+
+        gsap.to("#text", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            y: 320,
+        });
+    </script>
+</body>
+</html>

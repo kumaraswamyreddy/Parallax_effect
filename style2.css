@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #87cefa;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#text{
+    position: relative;
+    color: #fff;
+    font-size: 5vw;
+    background-color: #111;
+    opacity: 0.8;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    margin-top: 6px;
+}
+
+.column h2{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.column li, dt, dd{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+.row{
+    margin: 5%;
+    padding: 3% 5%;
+    background-color: #add8e6;
+}
+
+/* Clear floats after the columns */
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hedi{
+    text-align: center;
+    padding: 5px;
+}
+
+.hedi h1{
+    font-size: 3rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px){
+    .column{
+      width: 100%;
+    }
+  }
